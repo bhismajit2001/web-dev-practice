@@ -1,0 +1,62 @@
+/* #box1{
+  height: 100px;
+  width: 200px;
+  background-color: green;
+  font-size: 10px;
+  
+}
+#box2{
+  height: 50px;
+  width: 50px;
+  width: 30%;
+  background-color: yellow;margin-left:10px ;
+  font-size: 2em;
+  width: 5rem;
+  height: 4em;
+} */
+ /* div{
+  height: 100px;
+  width: 100px;
+  background-color: lawngreen;
+  border: 2px solid black;
+  display: inline-block;
+ } */
+ /* #box1{
+  position: static;
+ }
+ #box2{
+  position: relative;
+  top: 30px;
+  left: 10px;
+ }
+ #box3{
+  position: absolute;
+  top:500px;
+  left: 20px;
+ }
+ #box4{
+  position: fixed;
+  top: 0;
+  z-index: 10;
+ } */
+  /* body{
+    background-image: url(peacocke.jpg);
+    background-size: cover;
+  } 
+  #box1{
+    background-image: url(peacocke.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  /* } */
+  /* div{
+    height: 100px;
+    width: 100px;
+    background-image: url(nature.jpg);
+    background-size: cover;
+    color: rgb(34, 33, 33);
+    text-align: center;
+    position: fixed;
+    right: 0;
+    top: 250px;
+  } */

@@ -1,0 +1,32 @@
+.color{
+  background: #4f4e4e;
+  height: 240px;
+  width: 90px;
+  border: 2px solid black;
+   
+}
+#color1{
+  background-color: red;
+  height: 50px;
+  margin: 20px;
+  border-radius: 50%;
+  text-align: center;
+  border: 2px solid black;
+  
+}
+#color2{
+  background-color: yellow;
+  height: 50px;
+  margin: 20px;
+  border-radius: 50%;
+  text-align: center;
+  border: 2px solid black;
+}
+#color3{
+  background: green;
+  height: 50px;
+  margin: 20px;
+  border-radius: 50%;
+  text-align: center;
+  border: 2px solid black;
+}

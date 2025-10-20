@@ -1,0 +1,12 @@
+{
+  "name": "html-folder",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Bhismajit Sahu",
+  "license": "ISC",
+  "description": "It is a html practice folder."
+}
