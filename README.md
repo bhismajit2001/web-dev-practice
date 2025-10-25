@@ -4,7 +4,7 @@ This repository contains all my front-end and back-end practice code.
 ## Topics Covered
 ### Frontend
 - HTML, CSS, JavaScript, Bootstrap
-- React basics and components
+- React.js basics and components
 
 ### Backend
 - Node.js and Express
