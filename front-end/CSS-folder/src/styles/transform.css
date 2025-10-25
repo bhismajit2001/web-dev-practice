@@ -1,0 +1,32 @@
+.box{
+  height: 150px;
+  width: 150px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: plum;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  transition: all 2s ease-in ;
+
+}
+.box:hover{
+  transform: rotate(45deg);
+  /* transform: scale(2); */
+  
+}
+#div1:hover{
+  transform: rotate(180deg);
+  
+  
+}
+#div2:hover{
+  transform: rotatex(45deg);
+   /* transform: scalex(2); */
+  
+}
+#div3:hover{
+  transform: rotatey(45deg);
+ /* transform: scaley(2); */
+  
+}

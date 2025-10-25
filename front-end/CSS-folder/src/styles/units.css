@@ -1,0 +1,47 @@
+                              /* Percentage */
+ *{
+  margin: 0;
+  padding: 0;
+}
+
+#first{
+  background-color: greenyellow;
+  height: 100px;
+   width: 200px;
+}
+#second{
+background-color: blue;
+height: 60%;
+width: 50%;
+}
+
+                                /* em */
+#first1{
+  background-color: greenyellow;
+  font-size: 25px;
+}
+#second1{
+background-color: blue;
+font-size: 2em;
+}
+
+                                /* rem */
+
+*{
+  font-size: 30px;
+}
+#first2{
+  background-color: blueviolet;
+font-size: 20px;
+}
+#second2{
+  background-color: antiquewhite;
+  font-size: 2rem;
+}
+
+                                    /* vw/vh */
+#first3{
+  background-color: blue;
+  width: 70vw;
+  height: 50vh;
+}
