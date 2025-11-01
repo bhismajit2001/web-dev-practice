@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Functions</title>
+</head>
+<body>
+
+  <!-- <h1>Bat Ball Stump Game</h1>
+<button class="btn" id="bat" onclick="
+  let computerChoice= generateComputerChoice();
+  let result=getResult('Bat',computerChoice);
+  showResult('Bat',computerChoice,result);
+">Bat</button>
+
+
+
+<button class="btn" id="ball" onclick="
+  computerChoice= generateComputerChoice();
+  result=getResult('Ball',computerChoice);
+  showResult('Ball',computerChoice,result);
+">Ball</button>
+
+
+<button class="btn" id="stump" onclick="
+  computerChoice= generateComputerChoice();
+  result=getResult('Stump',computerChoice);
+  showResult('Stump',computerChoice,result);
+">Stump</button>  -->
+
+  <script>
+
+    // let age=25;
+    // function yourAge(){
+    //   console.log(`your age is: ${age}`);
+    // }
+    // yourAge();
+    // age=34;
+    // yourAge();
+    // age=94;
+    // yourAge()
+    
+              // return value
+
+    // function driveStatus(){
+    //   let  age=prompt('Enter your age');
+    //   if(age===undefined){
+    //     return 'aap avtar hai';
+    //   }
+      
+    //   if(age>18){
+    //     return 'you can drive';
+    //   }else{
+    //     return 'use a bicycle';
+    //   }
+      
+    // }
+    // document.body.innerHTML=driveStatus();
+
+
+                //use of parameter
+  //  function add(a,b){         //when u define function a,b is parameter.
+  //   let sum = a+b;
+  //   return sum;
+  //  } 
+  //  document.body.innerHTML=add(4,15);       //when u call the function a,b is argument.
+
+  //  function greeting(name='pyare'){    //by default argument pyare.
+  //   return `Namaste ${name} uncle`;
+  //  }
+  //  document.body.innerHTML=greeting();    
+
+
+                        //Practice  Function
+  //Creat a method to check if a number is odd or even.
+
+  // function isOdd(number){
+  //   let rem=number%2;
+  //   let isOdd=rem===1;
+  //   return isOdd;
+  // }
+  // document.body.innerHTML=(isOdd(3));
+
+
+          //method:2 for checking odd and even number
+//   function isOddEven(number){
+//     if(number%2===0){
+//       return `the number ${number} is Even number.`;
+//     }else{
+//       return `the number ${number} is Odd number.`;
+//     }
+//     return number;
+//   }
+// document.body.innerHTML=isOddEven(1);
+
+
+//creat amethod to return larger of the two numbers.
+function checkLargerNum(num1,num2){
+  // if(num1>num2){
+  //   return num1; 
+  // }else if(num1===num2){
+  //   return 'these two num is equal'
+  // }else{
+  //   return num2;
+  // }
+  let result= num1 > num2 ?  `${num1}`: `${num2}`;
+  return result;
+}
+// document.body.innerHTML +=`${checkLargerNum(4,12)}<br>`;
+// document.body.innerHTML +=`${checkLargerNum(334,45)}<br>`;
+// document.body.innerHTML +=`${checkLargerNum(45,45)}<br>`;
+// document.body.innerHTML +=`${checkLargerNum(0,0)}<br>`;
+
+//creat method to convert celsius to Fahrenheit F=(9/5)*C+32
+function toFahrenheit(celsiusValue){
+  return 9/5*celsiusValue+32;
+}
+// document.body.innerHTML +=`${toFahrenheit(38)}<br>`;
+// document.body.innerHTML +=`${toFahrenheit(0)}<br>`;
+// document.body.innerHTML +=`${toFahrenheit(100)}`;
+
+ function generateComputerChoice(){
+    let randomNum=Math.random()*3;
+    if(randomNum>0 && randomNum<=1){
+    return 'Bat';
+    }else if(randomNum>1 && randomNum<=2){
+    return'Ball';
+    }else{
+    return'Stump';
+    }
+   }
+
+   function getResult(userMove,computerMove){
+    if(userMove==='Bat'){
+      if (computerMove==='Ball'){
+        return 'user has won';
+      }else if(computerMove==='Stump'){
+        return 'Computer has won';
+      }else{
+        return 'Game was tai';
+      }
+    }else if(userMove==='Ball'){
+      if (computerMove==='Ball'){
+        return 'game is tie';
+      }else if(computerMove==='Stump'){
+        return 'User won';
+      }else{
+        return 'computer won';
+      }
+    }else{
+      if (computerMove==='Ball'){
+        return 'computer won';
+      }else if(computerMove==='Stump'){
+        return 'Game tie';
+      }else{
+        return 'user won';
+      }
+    }
+
+   }
+
+   function  showResult(userMove,computerMove,result){
+    alert(`you have chosen ${userMove}. computer choice is ${computerMove} and ${result}`);
+   }
+
+
+
+  </script>
+</body>
+</html>

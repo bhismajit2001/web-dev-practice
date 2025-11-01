@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Variable</title>
+  <style>
+    /* *{
+      margin: 0;
+      padding: 0;
+    } */
+    
+    #calculater{
+      border: 1px solid gray;
+      border-radius: 10px;
+      /* height: 400px; */
+      width: 200px;
+      /* display: flex;  */
+      /* justify-content: center;  */
+    }
+    #display{
+      margin: 10px;
+      width: 85%;
+      font-size: 25px;
+    }
+    .button_container{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn{
+      width: 45px;
+      height: 45px;
+      margin: 3px;
+
+    }
+  </style>
+</head>
+<body>
+  <!-- <button class="btn" id="btn_bag"></button>
+  <button class="btn" id="btn_wishlist"></button>
+  <button class="btn" id="btn_saleitem"></button>
+  <h1 class="header"></h1> -->
+
+  <!-- <h3 class="name"></h3> -->
+
+  <!-- <h1>Calculater</h1> -->
+  <div id="calculater">
+    <input type="text" name="" id="display" readonly>
+    <div class="button_container">
+      <button class="btn" onclick="currentDisplayValue='';document.querySelector('#display').value=currentDisplayValue;">c</button>
+      <button class="btn" onclick="currentDisplayValue=currentDisplayValue+'1';
+      document.querySelector('#display').value=currentDisplayValue;">1</button>
+      <button class="btn" onclick="currentDisplayValue=currentDisplayValue+'+';
+      document.querySelector('#display').value=currentDisplayValue;">+</button>
+      <button class="btn" onclick="currentDisplayValue=currentDisplayValue+'2';
+      document.querySelector('#display').value=currentDisplayValue;">2</button>
+      <button class="btn" onclick="currentDisplayValue=currentDisplayValue+'3';
+      document.querySelector('#display').value=currentDisplayValue;">3</button>
+      <button class="btn" onclick="currentDisplayValue=currentDisplayValue+'4';
+      document.querySelector('#display').value=currentDisplayValue;">4</button>
+      <button class="btn" onclick="currentDisplayValue=currentDisplayValue+'-';
+      document.querySelector('#display').value=currentDisplayValue;">-</button>
+      <button class="btn" onclick="currentDisplayValue=currentDisplayValue+'5';
+      document.querySelector('#display').value=currentDisplayValue;">5</button>
+      <button class="btn" onclick="currentDisplayValue=currentDisplayValue+'6';
+      document.querySelector('#display').value=currentDisplayValue;">6</button>
+      <button class="btn" onclick="currentDisplayValue=currentDisplayValue+'*';
+      document.querySelector('#display').value=currentDisplayValue;">*</button>
+      <button class="btn"onclick="currentDisplayValue=currentDisplayValue+'7';
+      document.querySelector('#display').value=currentDisplayValue;">7</button>
+      <button class="btn" onclick="currentDisplayValue=currentDisplayValue+'8';
+      document.querySelector('#display').value=currentDisplayValue;">8</button>
+      <button class="btn" onclick="currentDisplayValue=currentDisplayValue+'/';
+      document.querySelector('#display').value=currentDisplayValue;">/</button>
+      <button class="btn" onclick="let result=eval(currentDisplayValue);
+      currentDisplayValue=result;
+      document.querySelector('#display').value=currentDisplayValue;">=</button>
+      <button class="btn" onclick="currentDisplayValue=currentDisplayValue+'9';
+      document.querySelector('#display').value=currentDisplayValue;">9</button>
+      <button class="btn" onclick="currentDisplayValue=currentDisplayValue+'0';
+      document.querySelector('#display').value=currentDisplayValue;">0</button>
+      <button class="btn" onclick="currentDisplayValue=currentDisplayValue+'.';
+      document.querySelector('#display').value=currentDisplayValue;">.</button>
+    </div>
+  </div>
+
+  <!-- <script src="../src/scripts/variable.js">
+      // let welcome='Hello, I am Bhismajit Sahu';
+      // console.log(welcome);
+      
+  </script> -->
+  <script>
+    let currentDisplayValue='';
+    document.querySelector('#display').value=currentDisplayValue;
+  </script>
+</body>
+</html>

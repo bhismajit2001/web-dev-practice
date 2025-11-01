@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objects</title>
+</head>
+
+<!-- <h1>Bat Ball Stump Game</h1>
+<button class="btn" id="bat" onclick="
+  let computerChoice= generateComputerChoice();
+  let result=getResult('Bat',computerChoice);
+  showResult('Bat',computerChoice,result);
+">Bat</button>
+
+
+
+<button class="btn" id="ball" onclick="
+  computerChoice= generateComputerChoice();
+  result=getResult('Ball',computerChoice);
+  showResult('Ball',computerChoice,result);
+">Ball</button>
+
+
+<button class="btn" id="stump" onclick="
+  computerChoice= generateComputerChoice();
+  result=getResult('Stump',computerChoice);
+  showResult('Stump',computerChoice,result);
+">Stump</button> -->
+
+<body>
+  <script>
+    // let user={
+    //   Name :'Bhismajit Sahu',
+    //   Age:25,
+    //   Education:'Graduate',
+    //   'Body-count':0
+    // }
+    // document.body.innerHTML+=`${user}<br>`;
+    // document.body.innerHTML+=`${user.Name}<br>`;
+    // document.body.innerHTML+=`${user.Age}<br>`;
+    // document.body.innerHTML+=`${user.Education}<br>`;
+    // document.body.innerHTML+=`${user.Name='Kalyan'}<br>`;
+    // document.body.innerHTML+=`${user.Name}<br>`;
+    // document.body.innerHTML+=`${user['Name']}<br>`;
+    // delete user.Education;        //delete properties
+    // console.log(user);
+    // user.Mark=7.75        //add propertis
+    // console.log(user);
+    // let body='Body-count';
+    // console.log(`${user['Body-count']}`);
+    // console.log(user['Body-count']);
+
+
+                // Cricket game object
+
+  //   let score={
+  //     win:0,
+  //     lost:0,
+  //     tie:0,
+  //     displayScore: function(){
+  //       return`Number of win:${score.win}, Numer of lost:${score.lost}, Number of tie:${score.tie}`;
+        
+  //     }
+  //   };
+  // function generateComputerChoice(){
+  //   let randomNum=Math.random()*3;
+  //   if(randomNum>0 && randomNum<=1){
+  //   return 'Bat';
+  //   }else if(randomNum>1 && randomNum<=2){
+  //   return'Ball';
+  //   }else{
+  //   return'Stump';
+  //   }
+  //  }
+
+  //  function getResult(userMove,computerMove){
+  //   if(userMove==='Bat'){
+  //     if (computerMove==='Ball'){
+  //       //score.win=score.win+1;
+  //       //score.win+=1;
+  //       score.win++;
+  //       return 'user has won';
+  //     }else if(computerMove==='Stump'){
+  //       score.lost++;
+  //       return 'Computer has won';
+  //     }else{
+  //       score.tie++;
+  //       return 'Game was tai';
+  //     }
+  //   }else if(userMove==='Ball'){
+  //     if (computerMove==='Ball'){
+  //       score.tie++;
+  //       return 'game is tie';
+  //     }else if(computerMove==='Stump'){
+  //       score.win++;
+  //       return 'User won';
+  //     }else{
+  //       score.lost++;
+  //       return 'computer won';
+  //     }
+  //   }else{
+  //     if (computerMove==='Ball'){
+  //       score.lost++;
+  //       return 'computer won';
+  //     }else if(computerMove==='Stump'){
+  //       score.tie++;
+  //       return 'Game tie';
+  //     }else{
+  //       score.win++;
+  //       return 'user won';
+  //     }
+  //   }
+
+  //  }
+
+  //  function  showResult(userMove,computerMove,result){
+  //   // console.log(score);
+  //   alert(`you have chosen ${userMove}. computer choice is ${computerMove}
+  //   ${result}
+  //    ${score.displayScore()}`);
+  //  }
+
+
+  //nested object and inside object have a function its call method
+    //  let user={
+    //   Name :'Bhismajit Sahu',
+    //   Age:25,
+    //   Education:'Graduate',
+    //   'Body-count':0,
+    //   displayPrice: function(){
+    //     console.log(`My price is ₹${this.Age*2}`)
+    //   }
+    // };
+    // user.displayPrice();
+
+    //Math.random()
+    //console.log()
+                                    //Autoboxing
+    // console.log('Bhismajit Sahu,'.length);             
+    // console.log('Bhismajit Sahu,'.toLocaleUpperCase());
+
+                                  //Object referance
+    // let a=5;
+    // let b=a;
+    // const heading=document.createElement('h2');
+    // document.body.appendChild(heading);
+    // heading.innerHTML+=`a=${a} , b=${b}<br>`;
+    //  a=8;
+    // heading.innerHTML+=`a=${a} , b=${b}<br>`;
+
+    // let ob1={num: 6};
+    // let ob2=ob1;
+    // heading.innerHTML+=`ob1=${ob1.num} , ob2=${ob2.num}<br>`;
+    // ob1.num=7;
+    // heading.innerHTML+=`ob1=${ob1.num} , ob2=${ob2.num}<br>`;
+
+    // let p={pop:'sahu'};
+    // let q={pop:'sahu'};
+    // heading.innerHTML+=`${(p==q)}<br>`;
+    // heading.innerHTML+=`${(p===q)}<br>`;
+    // heading.innerHTML+=`${(p.pop==q.pop)}<br>`;
+    // heading.innerHTML+=`${(p.pop===q.pop)}<br>`;
+    
+    //  let user={
+    //   Name :'Bhismajit Sahu',
+    //   Age:25,
+    //   Education:'Graduate',
+    //   'Body-count':0
+    // }
+    // let{Name,Age,Education}=user;
+    // heading.innerHTML+=`${[Name,Age,Education]}<br>`;
+    
+    
+ 
+                      //Myntra object creation
+    // let product={
+    //   company:'Myntra',
+    //   name:'Jeans',
+    //   size:'s',
+    //   fit:'slim-fit',
+    //   'deliver-time':'Same deliver time'
+    // };
+    // let product1={
+    //   company:'Myntra',
+    //   name:'shirt',
+    //   size:'s',
+    //   fit:'slim-fit',
+    //   'deliver-time':'Same deliver time'
+    // }
+    // let product2={
+    //   company:'flip-cart',
+    //   name:'pants',
+    //   size:'XXL',
+    //   fit:'slim-fit',
+    //   'deliver-time':'Same deliver time'
+    // }
+    // let product3={
+    //   company:'flip-cart',
+    //   name:'pants',
+    //   size:'XXL',
+    //   fit:'slim-fit',
+    //   'deliver-time':'Same deliver time'
+    // }
+    // let obj={
+    //   message:'good morning',
+    //   status:'complete'
+    // };
+    // let copyProduct=product;
+    // const heading=document.createElement('h1');
+    // document.body.appendChild(heading);
+    // heading.innerHTML+=`${copyProduct['deliver-time']}<br>`;
+    // heading.innerHTML+=`${copyProduct.size}<br>`;
+    // heading.innerHTML+=`${copyProduct.size='M'}<br>`;
+    // heading.innerHTML+=`${product.size}<br>`;
+
+    // heading.innerHTML+=`${typeof product}<br>`;
+    // heading.innerHTML+=`${typeof product1}<br>`;
+
+    //  let checkingProduct= (product===product1) ? 'same product' : 'NOt same product';
+    //  heading.innerHTML+=`${checkingProduct}<br>`;
+    //  heading.innerHTML+=`${typeof checkingProduct}<br>`;
+
+    //  let checkingPropertyCompany=(`${product.company}`===`${product1.company}`) ? 'same company name' : 'not same company name';
+    //  heading.innerHTML+=`${checkingPropertyCompany}<br>`;
+
+    //  let checkingPropertyName=(`${product.name}`===`${product1.name}`) ? 'same name' : 'not same name';
+    //  heading.innerHTML+=`${checkingPropertyName}<br>`;
+
+    //   let checkingPropertySize=(`${product.size}`===`${product1.size}`) ? 'same size' : 'not same size';
+    //  heading.innerHTML+=`${checkingPropertySize}<br>`;
+
+    //   let checkingPropertyFit=(`${product.Fit}`===`${product1.Fit}`) ? 'same Fit' : 'not same Fit';
+    //  heading.innerHTML+=`${checkingPropertyFit}<br>`;
+     
+    //  copyProduct['deliver-time']='1-2 bussiness days';
+    //  heading.innerHTML+=`${copyProduct['deliver-time']}<br>`;
+    //  heading.innerHTML+=`${product['deliver-time']}<br>`;
+    //  heading.innerHTML+=`${product1['deliver-time']}<br>`;
+
+    // heading.innerHTML+=`${obj}<br>`;
+    // let{message,status}=obj;
+    // heading.innerHTML+=`${message}<br>${status}<br>`;
+
+
+    // function isIdenticalProduct(product1,product2){
+    //   if(typeof product1!=='object' || typeof product2!=='object'){
+    //     heading.innerHTML+=`${console.warn('Parameter passed was not an object')}<br>`;
+    //     return false;
+       
+    //   }
+    //   if(product1==product2){
+    //     return true;
+    //   }
+    //   if(product1.name===product2.name &&product1.size===product2.size &&product1.fit===product2.fit &&product1['deliver-time']===product2['deliver-time']){
+    //     return true;
+    //   }else{
+    //   return false;
+    //   }
+    // };
+
+    // heading.innerHTML+=`${isIdenticalProduct(product1,product1)}<br>`;
+    // heading.innerHTML+=`${isIdenticalProduct(product1,product2)}<br>`;
+    // heading.innerHTML+=`${isIdenticalProduct(product2,product2)}<br>`;
+    // heading.innerHTML+=`${isIdenticalProduct(product,product2)}<br>`;
+    // heading.innerHTML+=`${isIdenticalProduct(product3,product2)}<br>`;
+    // heading.innerHTML+=`${isIdenticalProduct(product2,product3)}<br>`;
+
+
+  
+    
+
+    
+    
+
+
+
+  </script>
+</body>
+</html>
